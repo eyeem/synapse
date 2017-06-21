@@ -2,7 +2,7 @@ require "synapse/service_watcher/base"
 
 require 'thread'
 
-module Synapse
+module Synapse::ServiceWatcher
   class SerfWatcher < BaseWatcher
 
     def initialize(opts = {}, synapse)
