@@ -2,7 +2,7 @@ require "synapse/service_watcher/base"
 
 require 'thread'
 
-module Synapse::ServiceWatcher
+class Synapse::ServiceWatcher
   class SerfWatcher < BaseWatcher
 
     def initialize(opts = {}, synapse)
@@ -13,7 +13,6 @@ module Synapse::ServiceWatcher
         @all_backups_except_one = opts['haproxy']['all_backups_except_one']
       end
     end
-
     def start
       @serf_members = '/dev/shm/serf_members.json'
       @cycle_delay = 1
