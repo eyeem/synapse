@@ -25,6 +25,8 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency "docker-api", "~> 1.7"
   gem.add_runtime_dependency "zk", "~> 1.9.4"
   gem.add_runtime_dependency "logging", "~> 1.8"
+  gem.add_runtime_dependency "hashdiff", "~> 0.2.3"
+  gem.add_runtime_dependency "dogstatsd-ruby", "~> 3.3.0"
 
   gem.add_development_dependency "rake"
   gem.add_development_dependency "rspec", "~> 3.1.0"
@@ -33,4 +35,6 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency "pry-nav"
   gem.add_development_dependency "webmock"
   gem.add_development_dependency "timecop"
+  gem.add_development_dependency "simplecov", "~> 0.16"
+  gem.add_development_dependency "simplecov-json", "~> 0.2"
 end
