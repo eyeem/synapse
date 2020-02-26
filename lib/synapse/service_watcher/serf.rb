@@ -112,7 +112,6 @@ class Synapse::ServiceWatcher
       members.each do |member|
         next unless member['status'] == 'alive'
         member['tags'].each do |tag,data|
-          puts name, tag, data
           if tag =~ /^smart:#{name}(|_[0-9]+)$/
             host,port = data.split ':'
 
