@@ -99,10 +99,10 @@ GEM
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff
-    zk (1.9.6)
-      zookeeper (~> 1.4.0)
-    zookeeper (1.4.11)
-    zookeeper (1.4.11-java)
+    zk (1.10.0)
+      zookeeper (~> 1.5.0)
+    zookeeper (1.5.0)
+    zookeeper (1.5.0-java)
       slyphon-log4j (= 1.2.15)
       slyphon-zookeeper_jar (= 3.3.5)
 
